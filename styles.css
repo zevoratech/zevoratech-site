@@ -2,21 +2,22 @@
    ZevoraTech — Design tokens
    ============================================================ */
 :root{
-  --navy-950:#080d1f;
-  --navy-900:#0d1b4c;
-  --navy-800:#122567;
-  --blue-500:#2f6fed;
-  --blue-400:#4fa8ff;
-  --cyan-300:#8fe3ff;
-  --ink:#0f1729;
-  --slate-600:#485066;
+  --navy-950:#060a16;
+  --navy-900:#0f172a;
+  --navy-800:#16213e;
+  --blue-600:#2563eb;
+  --blue-500:#3b82f6;
+  --blue-400:#60a5fa;
+  --cyan-300:#93c5fd;
+  --ink:#0f172a;
+  --slate-600:#475066;
   --slate-500:#5b6578;
   --slate-400:#8891a4;
-  --paper:#f5f7fc;
-  --paper-dim:#eceff8;
-  --line:#e1e6f0;
+  --paper:#f6f8fb;
+  --paper-dim:#eef1f8;
+  --line:#e2e6f0;
   --line-dark:rgba(255,255,255,0.12);
-  --radius:14px;
+  --radius:16px;
   --max:1160px;
   --font-display:'Space Grotesk', sans-serif;
   --font-body:'Inter', sans-serif;
@@ -29,7 +30,9 @@ body{
   margin:0;
   font-family:var(--font-body);
   color:var(--ink);
-  background:var(--paper);
+  background:
+    radial-gradient(900px 420px at 90% 0%, rgba(59,130,246,.06), transparent 60%),
+    var(--paper);
   -webkit-font-smoothing:antialiased;
   line-height:1.55;
 }
@@ -70,8 +73,8 @@ p{margin:0 0 1em;color:var(--slate-600);}
   cursor:pointer;transition:transform .18s ease, box-shadow .18s ease, background .18s ease, color .18s ease;
   white-space:nowrap;
 }
-.btn-primary{background:var(--blue-500);color:#fff;box-shadow:0 8px 20px -8px rgba(47,111,237,.65);}
-.btn-primary:hover{transform:translateY(-2px);box-shadow:0 12px 26px -8px rgba(47,111,237,.75);}
+.btn-primary{background:linear-gradient(135deg, var(--blue-500), var(--blue-600));color:#fff;box-shadow:0 8px 20px -8px rgba(37,99,235,.6);}
+.btn-primary:hover{transform:translateY(-2px);box-shadow:0 14px 28px -8px rgba(37,99,235,.7);}
 .btn-ghost{background:transparent;border-color:var(--line);color:var(--ink);}
 .btn-ghost:hover{border-color:var(--blue-500);color:var(--blue-500);}
 .btn-ghost-dark{background:transparent;border-color:var(--line-dark);color:#fff;}
@@ -175,10 +178,20 @@ p{margin:0 0 1em;color:var(--slate-600);}
 .hero-mark{
   position:relative;
   display:flex;align-items:center;justify-content:center;
+  min-height:320px;
+}
+.hero-mark::before{
+  content:"";
+  position:absolute;
+  width:340px;height:340px;
+  background:radial-gradient(circle, rgba(59,130,246,.35), rgba(59,130,246,0) 70%);
+  filter:blur(10px);
+  z-index:0;
 }
 .hero-mark img{
-  width:min(360px,90%);
-  filter:drop-shadow(0 30px 60px rgba(0,0,0,.45));
+  position:relative;z-index:1;
+  width:min(320px,85%);
+  filter:drop-shadow(0 25px 50px rgba(0,0,0,.5));
 }
 @media (max-width:860px){
   .hero-grid{grid-template-columns:1fr;}
@@ -205,7 +218,7 @@ section{padding:88px 0;}
   background:#fff;border:1px solid var(--line);border-radius:var(--radius);
   padding:30px 28px;transition:transform .2s ease, box-shadow .2s ease, border-color .2s ease;
 }
-.card:hover{transform:translateY(-4px);box-shadow:0 18px 34px -18px rgba(13,27,76,.25);border-color:#d3dcf2;}
+.card:hover{transform:translateY(-4px);box-shadow:0 18px 34px -18px rgba(15,23,42,.25);border-color:#c9d6f5;}
 .card .icon{
   width:42px;height:42px;border-radius:10px;
   background:linear-gradient(135deg, var(--blue-500), var(--navy-900));
