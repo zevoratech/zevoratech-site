@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Products — ZevoraTech</title>
+<meta name="description" content="ZevoraTech's software products — in development, launching soon.">
+<link rel="icon" href="assets/logo-icon-square.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="container">
+    <a href="index.html" class="brand"><img src="assets/logo-mark-t.png" alt="ZevoraTech logo">ZevoraTech</a>
+    <div class="nav-links" id="navLinks">
+      <a href="index.html">Home</a>
+      <a href="products.html" class="active">Products</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div class="nav-cta">
+      <a href="contact.html" class="btn btn-ghost" style="padding:10px 20px;">Get in touch</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<header class="page-hero">
+  <div class="container">
+    <span class="pill">Work &amp; roadmap</span>
+    <h1 style="margin-top:16px;">Products, built from what we've learned building for others.</h1>
+    <p>Every custom project teaches us something. Below is a look at what we've already delivered for clients — and the products we're building next from those lessons.</p>
+  </div>
+</header>
+
+<section>
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Client work</span>
+      <h2>Recently delivered.</h2>
+      <p>A look at what we've already shipped for clients — the kind of work shaping our own products next. Client names are kept private.</p>
+    </div>
+    <div class="grid-2">
+      <div class="product-card">
+        <span class="pill on-light">In production</span>
+        <span class="eyebrow" style="margin-bottom:6px;">Manufacturing · Android app</span>
+        <h3>Factory Operations App</h3>
+        <p>An Android application built for a manufacturing client to run daily floor operations from one place — production tracking, sales management, cash handling, and staff attendance via punch-in/punch-out. Used daily by supervisors and staff on site.</p>
+      </div>
+      <div class="product-card">
+        <span class="pill on-light">In production</span>
+        <span class="eyebrow" style="margin-bottom:6px;">Healthcare · Workflow automation</span>
+        <h3>Automated Leave Approval System</h3>
+        <p>A leave request system built for a hospital client so doctors can submit advance leave requests through a simple form. Each request is checked automatically against nine internal policy conditions, with instant auto-approval when all are met — replacing a manual back-and-forth with a process that takes seconds.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="circuit-divider"><div class="node"></div><div class="trace"></div><div class="node"></div><div class="trace"></div><div class="node"></div></div>
+
+<section>
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Coming soon</span>
+      <h2>What we're working on for ourselves.</h2>
+      <p>Nothing here is available to buy yet — here's an honest look at what's in progress.</p>
+    </div>
+    <div class="grid-2">
+      <div class="product-card">
+        <span class="pill on-light">Coming soon</span>
+        <span class="eyebrow" style="margin-bottom:6px;">Category · Business tools</span>
+        <h3>ZevoraTech Ops</h3>
+        <p>A lightweight operations dashboard for small teams — projects, tasks, and reporting in one place, without the bloat.</p>
+      </div>
+      <div class="product-card">
+        <span class="pill on-light">Coming soon</span>
+        <span class="eyebrow" style="margin-bottom:6px;">Category · Developer tools</span>
+        <h3>ZevoraTech Deploy</h3>
+        <p>A simpler path from repository to production for small engineering teams who don't want to manage infrastructure by hand.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="circuit-divider"><div class="node"></div><div class="trace"></div><div class="node"></div><div class="trace"></div><div class="node"></div></div>
+
+<section style="background:linear-gradient(180deg, var(--navy-950), var(--navy-900));color:#fff;">
+  <div class="container" style="text-align:center;">
+    <span class="pill">Be first to know</span>
+    <h2 style="margin-top:16px;">Want an early look?</h2>
+    <p style="color:#c4cbe0;max-width:480px;margin:0 auto 28px;">Leave your email and we'll invite you to try our first product before public launch.</p>
+    <form class="notify-form" style="margin:0 auto;justify-content:center;" onsubmit="event.preventDefault(); this.querySelector('button').textContent='You are on the list'; this.querySelector('button').disabled=true;">
+      <input type="email" placeholder="you@company.com" required aria-label="Email address">
+      <button type="submit" class="btn btn-primary">Notify me</button>
+    </form>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="cta-band">
+      <div>
+        <h2>Need software before then?</h2>
+        <p>We still take on custom projects while our products are in the works.</p>
+      </div>
+      <a href="contact.html" class="btn btn-primary">Start a project</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand"><img src="assets/logo-mark-dark.png" alt="ZevoraTech logo">ZevoraTech</div>
+        <p style="color:#8891a4;font-size:14.5px;max-width:280px;">A software studio building custom applications and, soon, products of our own.</p>
+      </div>
+      <div>
+        <h4>Site</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <ul>
+          <li><a href="mailto:info@zevoratech.in">info@zevoratech.in</a></li>
+          <li><a href="contact.html">Work with us</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Elsewhere</h4>
+        <ul>
+          <li><a href="#">LinkedIn</a></li>
+          <li><a href="#">GitHub</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="year"></span> ZevoraTech Private Limited. All rights reserved.</span>
+      <span>zevoratech.in</span>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
