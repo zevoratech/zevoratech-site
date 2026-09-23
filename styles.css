@@ -1,0 +1,305 @@
+/* ============================================================
+   ZevoraTech — Design tokens
+   A small studio building for manufacturing, healthcare and
+   trading clients — the palette and structure lean toward
+   precision and specification rather than generic SaaS polish.
+   ============================================================ */
+:root{
+  --ink:#12141c;
+  --graphite:#1c2029;
+  --graphite-2:#242a36;
+  --blue:#2454eb;
+  --blue-deep:#1b3fc4;
+  --blue-light:#8fabff;
+  --steel:#5b6577;
+  --steel-light:#8790a0;
+  --paper:#f8f8f6;
+  --paper-dim:#f0f0ed;
+  --line:#e2e2dd;
+  --line-dark:rgba(255,255,255,0.14);
+  --ok:#1f9d63;
+  --radius-sm:10px;
+  --radius:14px;
+  --max:1160px;
+  --font-display:'Space Grotesk', sans-serif;
+  --font-body:'Inter', sans-serif;
+}
+
+*,*::before,*::after{box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{
+  margin:0;
+  font-family:var(--font-body);
+  color:var(--ink);
+  background:var(--paper);
+  -webkit-font-smoothing:antialiased;
+  line-height:1.55;
+}
+img{max-width:100%;display:block;}
+a{color:inherit;text-decoration:none;}
+h1,h2,h3,h4{font-family:var(--font-display);margin:0 0 .5em;line-height:1.12;letter-spacing:-0.015em;font-weight:600;}
+p{margin:0 0 1em;color:var(--steel);}
+.container{max-width:var(--max);margin:0 auto;padding:0 24px;}
+:focus-visible{outline:2px solid var(--blue);outline-offset:3px;}
+@media (prefers-reduced-motion: reduce){
+  *{animation-duration:.01ms !important;animation-iteration-count:1 !important;transition-duration:.01ms !important;scroll-behavior:auto !important;}
+}
+
+/* Small structural kicker — sentence case, no tracking, no mono.
+   Used sparingly where it genuinely orients the reader. */
+.kicker{
+  font-size:14px;color:var(--steel);margin:0 0 10px;font-weight:500;
+}
+
+/* ============================================================
+   Buttons — pill shape is deliberate: it echoes the ring/swoosh
+   in the ZT mark, not a default rounded-button choice.
+   ============================================================ */
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:8px;
+  font-family:var(--font-body);font-weight:600;font-size:15px;
+  padding:13px 26px;border-radius:999px;border:1px solid transparent;
+  cursor:pointer;transition:transform .16s ease, box-shadow .16s ease, background .16s ease, color .16s ease, border-color .16s ease;
+  white-space:nowrap;
+}
+.btn-primary{background:var(--blue);color:#fff;box-shadow:0 6px 16px -6px rgba(36,84,235,.55);}
+.btn-primary:hover{background:var(--blue-deep);transform:translateY(-1px);box-shadow:0 10px 22px -6px rgba(36,84,235,.6);}
+.btn-ghost{background:transparent;border-color:var(--line);color:var(--ink);}
+.btn-ghost:hover{border-color:var(--blue);color:var(--blue);}
+.btn-ghost-dark{background:transparent;border-color:var(--line-dark);color:#fff;}
+.btn-ghost-dark:hover{border-color:var(--blue-light);color:var(--blue-light);}
+.btn-small{padding:9px 18px;font-size:13.5px;}
+
+/* ============================================================
+   Nav
+   ============================================================ */
+.nav{
+  position:sticky;top:0;z-index:50;
+  background:rgba(248,248,246,.88);
+  backdrop-filter:blur(10px);
+  border-bottom:1px solid var(--line);
+}
+.nav .container{
+  display:flex;align-items:center;justify-content:space-between;
+  height:74px;
+}
+.brand{display:flex;align-items:center;gap:10px;font-family:var(--font-display);font-weight:700;font-size:18px;}
+.brand img{height:30px;width:30px;object-fit:contain;}
+.nav-links{display:flex;align-items:center;gap:32px;}
+.nav-links a{
+  font-size:14.5px;font-weight:500;color:var(--steel);
+  position:relative;padding:4px 0;
+}
+.nav-links a:hover{color:var(--ink);}
+.nav-links a.active{color:var(--ink);font-weight:600;}
+.nav-links a.active::after{
+  content:"";position:absolute;left:0;right:0;bottom:-4px;height:2px;background:var(--blue);border-radius:2px;
+}
+.nav-toggle{display:none;background:none;border:0;cursor:pointer;padding:6px;}
+.nav-toggle span{display:block;width:22px;height:2px;background:var(--ink);margin:5px 0;border-radius:2px;}
+
+@media (max-width:860px){
+  .nav-links{
+    position:absolute;top:74px;left:0;right:0;
+    background:var(--paper);border-bottom:1px solid var(--line);
+    flex-direction:column;align-items:flex-start;gap:0;
+    padding:8px 24px 18px;
+    display:none;
+  }
+  .nav-links.open{display:flex;}
+  .nav-links a{width:100%;padding:12px 0;border-bottom:1px solid var(--line);}
+  .nav-toggle{display:block;}
+}
+
+/* ============================================================
+   Hero — a spec panel replaces the old glow/blob treatment,
+   pairing the mark with real facts instead of decoration.
+   ============================================================ */
+.hero{
+  background:var(--graphite);
+  color:#fff;
+  padding:88px 0 84px;
+}
+.hero-grid{
+  display:grid;grid-template-columns:1.15fr .85fr;gap:56px;align-items:center;
+}
+.hero h1{font-size:clamp(34px,4.4vw,54px);margin-bottom:.4em;font-weight:600;}
+.hero p.lead{color:#aeb6c6;font-size:18px;max-width:500px;}
+.hero-actions{display:flex;gap:14px;margin-top:32px;flex-wrap:wrap;}
+
+.spec-panel{
+  border:1px solid var(--line-dark);
+  border-radius:var(--radius);
+  background:
+    linear-gradient(var(--graphite-2), var(--graphite-2)) padding-box,
+    repeating-linear-gradient(0deg, transparent, transparent 27px, rgba(143,171,255,.07) 27px, rgba(143,171,255,.07) 28px),
+    repeating-linear-gradient(90deg, transparent, transparent 27px, rgba(143,171,255,.07) 27px, rgba(143,171,255,.07) 28px);
+  overflow:hidden;
+}
+.spec-panel-mark{
+  padding:36px 32px 24px;
+  display:flex;align-items:center;justify-content:center;
+  border-bottom:1px solid var(--line-dark);
+}
+.spec-panel-mark img{width:120px;}
+.spec-panel dl{margin:0;padding:20px 28px;}
+.spec-panel .spec-row{
+  display:flex;justify-content:space-between;gap:16px;
+  padding:11px 0;border-bottom:1px solid var(--line-dark);
+  font-size:14px;
+}
+.spec-panel .spec-row:last-child{border-bottom:0;}
+.spec-panel dt{color:#8790a0;}
+.spec-panel dd{margin:0;color:#fff;font-weight:600;text-align:right;}
+
+@media (max-width:860px){
+  .hero-grid{grid-template-columns:1fr;}
+}
+
+/* ============================================================
+   Sections
+   ============================================================ */
+section{padding:84px 0;}
+.section-head{max-width:640px;margin:0 0 44px;}
+.section-head.center{margin-left:auto;margin-right:auto;text-align:center;}
+.section-head h2{font-size:clamp(26px,3vw,36px);}
+.section-head p{font-size:16.5px;}
+
+.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;}
+.grid-2{display:grid;grid-template-columns:repeat(2,1fr);gap:24px;}
+@media (max-width:860px){
+  .grid-3,.grid-2{grid-template-columns:1fr;}
+}
+
+/* Capability list — a row list, not a card grid, since it isn't
+   a catalog of discrete items the way products/client work is. */
+.capability-list{border-top:1px solid var(--line);}
+.capability-row{
+  display:grid;grid-template-columns:52px 1fr;gap:22px;
+  padding:26px 0;border-bottom:1px solid var(--line);
+}
+.capability-row svg{width:26px;height:26px;stroke:var(--blue);fill:none;stroke-width:1.6;}
+.capability-row h3{font-size:18px;margin-bottom:4px;}
+.capability-row p{margin:0;font-size:15px;max-width:60ch;}
+
+/* CTA band */
+.cta-band{
+  background:var(--graphite);
+  color:#fff;border-radius:var(--radius);padding:52px 44px;
+  border-top:3px solid var(--blue);
+  display:flex;align-items:center;justify-content:space-between;gap:32px;flex-wrap:wrap;
+}
+.cta-band h2{font-size:clamp(22px,2.4vw,28px);margin-bottom:.3em;}
+.cta-band p{color:#aeb6c6;margin-bottom:0;}
+
+/* Footer */
+footer{background:var(--graphite);color:#aeb6c6;padding:60px 0 26px;}
+.footer-grid{display:grid;grid-template-columns:1.6fr repeat(2,1fr);gap:40px;padding-bottom:36px;}
+.footer-brand{display:flex;align-items:center;gap:10px;font-family:var(--font-display);font-weight:700;font-size:17px;color:#fff;margin-bottom:14px;}
+.footer-brand img{height:26px;}
+footer h4{color:#fff;font-size:13.5px;font-weight:600;margin-bottom:16px;}
+footer ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:11px;}
+footer a{font-size:14.5px;color:#9aa3b5;}
+footer a:hover{color:var(--blue-light);}
+.footer-bottom{
+  border-top:1px solid var(--line-dark);padding-top:22px;
+  display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;
+  font-size:13px;color:#727c8f;
+}
+@media (max-width:860px){
+  .footer-grid{grid-template-columns:1fr 1fr;}
+}
+
+/* ============================================================
+   Page hero (secondary pages)
+   ============================================================ */
+.page-hero{
+  background:var(--graphite);
+  color:#fff;padding:68px 0 56px;
+}
+.page-hero h1{font-size:clamp(30px,3.8vw,44px);}
+.page-hero p{color:#aeb6c6;max-width:600px;font-size:17px;margin-bottom:0;}
+
+/* Status tag — a colored dot plus sentence-case text, not an
+   uppercase pill; the color itself carries meaning. */
+.status{
+  display:inline-flex;align-items:center;gap:7px;
+  font-size:13px;font-weight:600;color:var(--steel);
+}
+.status::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--steel-light);flex-shrink:0;}
+.status.is-live::before{background:var(--ok);}
+.status.is-progress::before{background:var(--blue);}
+.status.on-dark{color:#c7cdda;}
+
+.tag{
+  font-size:13px;color:var(--steel);
+}
+
+/* Product / client-work cards */
+.product-card{
+  background:#fff;border:1px solid var(--line);border-radius:var(--radius-sm);
+  padding:28px;border-top:3px solid var(--line);
+  display:flex;flex-direction:column;gap:14px;
+}
+.product-card.accent-client{border-top-color:var(--blue);}
+.product-card.accent-own{border-top-color:var(--steel);}
+.product-card .card-top{
+  display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;
+}
+.product-card h3{font-size:20px;margin:0;}
+.product-card p{font-size:15px;margin:0;}
+.product-card .card-links{display:flex;gap:10px;flex-wrap:wrap;margin-top:4px;}
+
+/* Notify form */
+.notify-form{display:flex;gap:10px;max-width:420px;flex-wrap:wrap;}
+.notify-form input[type=email]{
+  flex:1;min-width:200px;padding:13px 16px;border-radius:999px;
+  border:1px solid var(--line-dark);background:rgba(255,255,255,.06);color:#fff;font-size:15px;
+}
+.notify-form input[type=email]::placeholder{color:#8790a0;}
+.notify-form input[type=email]:focus{outline:2px solid var(--blue-light);outline-offset:2px;}
+.form-note{font-size:13px;color:#8790a0;margin-top:10px;}
+
+/* Contact page */
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start;}
+@media (max-width:860px){.contact-grid{grid-template-columns:1fr;}}
+.info-row{display:flex;gap:16px;padding:20px 0;border-bottom:1px solid var(--line);}
+.info-row:last-child{border-bottom:0;}
+.info-row .icon{
+  width:36px;height:36px;border-radius:8px;flex-shrink:0;
+  background:var(--paper-dim);display:flex;align-items:center;justify-content:center;
+  color:var(--blue);
+}
+.info-row .icon svg{width:18px;height:18px;stroke:var(--blue);fill:none;stroke-width:1.7;}
+.info-row h4{margin:0 0 4px;font-size:15px;}
+.info-row p{margin:0;font-size:14.5px;}
+
+.form-field{margin-bottom:20px;}
+.form-field label{display:block;font-size:13.5px;font-weight:600;margin-bottom:7px;color:var(--steel);}
+.form-field input,.form-field textarea,.form-field select{
+  width:100%;padding:13px 15px;border-radius:var(--radius-sm);border:1px solid var(--line);
+  font-family:var(--font-body);font-size:15px;background:#fff;color:var(--ink);
+}
+.form-field input:focus,.form-field textarea:focus,.form-field select:focus{
+  outline:2px solid var(--blue);outline-offset:1px;border-color:var(--blue);
+}
+.form-field textarea{resize:vertical;min-height:120px;}
+.form-status{font-size:14px;margin-top:14px;display:none;padding:12px 14px;border-radius:var(--radius-sm);}
+.form-status.show{display:block;}
+.form-status.ok{background:#e9f7ef;color:#146c43;}
+.form-status.err{background:#fdecea;color:#b3261e;}
+.form-fallback{font-size:13.5px;color:var(--steel);margin-top:16px;}
+
+/* About page */
+.value-row{display:grid;grid-template-columns:120px 1fr;gap:20px;padding:24px 0;border-bottom:1px solid var(--line);}
+.value-row:last-child{border-bottom:0;}
+.value-row .tag{padding-top:3px;}
+.value-row h3{font-size:18px;margin-bottom:6px;}
+.value-row p{margin:0;}
+@media (max-width:640px){
+  .value-row{grid-template-columns:1fr;gap:6px;}
+}
+
+.stat-row{display:flex;gap:48px;flex-wrap:wrap;padding:36px 0;}
+.stat .num{font-family:var(--font-display);font-size:36px;color:var(--ink);}
+.stat .label{font-size:13.5px;color:var(--steel);}
