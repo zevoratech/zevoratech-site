@@ -7,7 +7,7 @@
 <meta name="description" content="Get in touch with ZevoraTech about a software project.">
 <link rel="icon" href="assets/logo2-icon-square.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -21,19 +21,15 @@
       <a href="about.html">About</a>
       <a href="contact.html" class="active">Contact</a>
     </div>
-    <div class="nav-cta">
-      <a href="contact.html" class="btn btn-ghost" style="padding:10px 20px;">Get in touch</a>
-      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
-        <span></span><span></span><span></span>
-      </button>
-    </div>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
   </div>
 </nav>
 
 <header class="page-hero">
   <div class="container">
-    <span class="pill">Contact</span>
-    <h1 style="margin-top:16px;">Tell us what you're building.</h1>
+    <h1>Tell us what you're building.</h1>
     <p>Whether it's a custom project or just a question about our roadmap, we read every message.</p>
   </div>
 </header>
@@ -42,25 +38,24 @@
   <div class="container contact-grid">
     <div>
       <div class="section-head">
-        <span class="eyebrow">Reach us directly</span>
         <h2>Talk to ZevoraTech.</h2>
         <p>We typically reply within one business day.</p>
       </div>
       <div class="info-row">
-        <div class="icon">@</div>
+        <div class="icon"><svg viewBox="0 0 24 24"><path d="M4 6h16v12H4z"/><path d="M4 7l8 6 8-6"/></svg></div>
         <div><h4>Email</h4><p><a href="mailto:info@zevoratech.in">info@zevoratech.in</a></p></div>
       </div>
       <div class="info-row">
-        <div class="icon">W</div>
+        <div class="icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg></div>
         <div><h4>Website</h4><p>zevoratech.in</p></div>
       </div>
       <div class="info-row">
-        <div class="icon">◎</div>
+        <div class="icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg></div>
         <div><h4>Working hours</h4><p>Monday–Friday, 10am–6pm IST</p></div>
       </div>
     </div>
     <div>
-      <form id="contactForm" action="mailto:info@zevoratech.in" method="post" enctype="text/plain">
+      <form id="contactForm">
         <div class="form-field">
           <label for="name">Name</label>
           <input id="name" name="name" type="text" required placeholder="Your full name">
@@ -83,7 +78,8 @@
           <textarea id="message" name="message" required placeholder="A few details about what you need"></textarea>
         </div>
         <button type="submit" class="btn btn-primary" style="width:100%;">Send message</button>
-        <p class="form-note" style="color:var(--slate-500);">This opens your email app with the message pre-filled — no data is stored on this site.</p>
+        <div class="form-status" id="formStatus"></div>
+        <p class="form-fallback">Prefer email directly? Write to <a href="mailto:info@zevoratech.in">info@zevoratech.in</a>.</p>
       </form>
     </div>
   </div>
@@ -94,7 +90,7 @@
     <div class="footer-grid">
       <div>
         <div class="footer-brand"><img src="assets/logo2-mark-dark.png" alt="ZevoraTech logo">ZevoraTech</div>
-        <p style="color:#8891a4;font-size:14.5px;max-width:280px;">A software studio building custom applications and, soon, products of our own.</p>
+        <p style="color:#8790a0;font-size:14.5px;max-width:280px;">A software studio building custom applications and a growing line of our own products.</p>
       </div>
       <div>
         <h4>Site</h4>
@@ -111,13 +107,6 @@
           <li><a href="mailto:info@zevoratech.in">info@zevoratech.in</a></li>
           <li><a href="contact.html">Work with us</a></li>
           <li><a href="privacy-policy.html">Privacy Policy</a></li>
-        </ul>
-      </div>
-      <div>
-        <h4>Elsewhere</h4>
-        <ul>
-          <li><a href="#">LinkedIn</a></li>
-          <li><a href="#">GitHub</a></li>
         </ul>
       </div>
     </div>
