@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NetScope Privacy Policy — ZevoraTech</title>
+<style>
+  :root { --bg:#f6f8fc; --fg:#0e1a2b; --muted:#51627a; --card:#fff; --line:#d5dde9; --accent:#1f63d6; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#0b1522; --fg:#e6edf7; --muted:#9fb0c7; --card:#111e2e; --line:#243447; --accent:#4c9aff; }
+  }
+  body { margin:0; background:var(--bg); color:var(--fg); font:16px/1.65 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif; }
+  main { max-width:760px; margin:0 auto; padding:32px 20px 64px; }
+  h1 { font-size:2rem; margin:0 0 4px; }
+  h2 { font-size:1.15rem; margin:32px 0 8px; }
+  p, li { color:var(--fg); }
+  .meta { color:var(--muted); margin:0 0 24px; }
+  a { color:var(--accent); }
+  .card { background:var(--card); border:1px solid var(--line); border-radius:14px; padding:16px 20px; }
+  table { width:100%; border-collapse:collapse; margin-top:8px; }
+  th, td { text-align:left; padding:8px 10px; border-bottom:1px solid var(--line); vertical-align:top; font-size:.95rem; }
+  th { color:var(--muted); font-weight:600; }
+  .wrap { overflow-x:auto; }
+  .back { display:inline-block; margin-bottom:20px; color:var(--muted); text-decoration:none; font-size:.9rem; }
+  .back:hover { color:var(--accent); }
+  .foot-note { color:var(--muted); font-size:.85rem; margin-top:40px; border-top:1px solid var(--line); padding-top:16px; }
+</style>
+</head>
+<body>
+<main>
+  <a class="back" href="products.html">&larr; Back to ZevoraTech</a>
+  <h1>NetScope Privacy Policy</h1>
+  <p class="meta">App: NetScope (com.zevoratech.netscope) · Developer: ZevoraTech · Last updated: 19 September 2026</p>
+
+  <div class="card">
+    <p><strong>In short:</strong> NetScope has no accounts, no ads and no analytics. Your signal readings, logs and settings stay on your phone. ZevoraTech does not collect, receive or store your personal data.</p>
+  </div>
+
+  <h2>1. What the app reads on your device</h2>
+  <p>To do its job, NetScope reads information from your phone's radios and system. This information is processed on your device to show you your signal, cells, Wi-Fi and connection details.</p>
+  <div class="wrap">
+  <table>
+    <tr><th>Information</th><th>Why the app needs it</th></tr>
+    <tr><td>Cell tower and mobile network details (cell IDs, bands, signal levels, operator)</td><td>Shown on the Signal and Cells screens. Android only allows this with location permission.</td></tr>
+    <tr><td>Precise location (GPS)</td><td>Required by Android to read cell and Wi-Fi scan data. Also used to add coordinates to rows in your signal log if you switch logging on.</td></tr>
+    <tr><td>Phone state (SIM carrier, roaming, network type)</td><td>Shows your SIM cards and whether you are on LTE-A or 5G.</td></tr>
+    <tr><td>Wi-Fi scan results and connection details</td><td>Shown in the Wi-Fi scanner and Connection info.</td></tr>
+    <tr><td>Network configuration (IP addresses, DNS servers, gateway)</td><td>Shown in Connection info.</td></tr>
+  </table>
+  </div>
+  <p>NetScope does not read your contacts, messages, call history, photos or files, and it does not use the advertising ID.</p>
+
+  <h2>2. What stays on your phone</h2>
+  <p>Settings, speed-test history and the signal log are stored only in the app's private storage on your phone. The signal log is created only if you turn logging on. It is shared only if you choose Export CSV and pick an app to send it to. You can delete the log inside the app (Tools, then Signal log, then Delete), and uninstalling NetScope removes all of its data.</p>
+
+  <h2>3. When the app connects to the internet</h2>
+  <p>NetScope contacts the internet only when you use a feature that needs it:</p>
+  <ul>
+    <li><strong>Speed test:</strong> connects to Cloudflare's public speed-test servers (speed.cloudflare.com). The servers see your IP address like any website you visit. Cloudflare's privacy policy applies to that connection.</li>
+    <li><strong>Connection info, public IP:</strong> asks the ipwho.is service which public IP address and provider you appear as. That service sees your IP address to answer.</li>
+    <li><strong>Ping, traceroute, DNS lookup and port check:</strong> send network requests to the host name or address you type in.</li>
+  </ul>
+  <p>None of these requests include your location, your signal log or any identifier belonging to NetScope, and ZevoraTech does not receive the results.</p>
+
+  <h2>4. Background monitoring</h2>
+  <p>If you switch on background monitoring, NetScope keeps running with a visible notification so that logging and alerts continue while the app is closed. Location is used only while that service is running, and you can stop it from the notification or in Settings at any time. NetScope does not request background location permission.</p>
+
+  <h2>5. Sharing</h2>
+  <p>We do not sell, rent or share your data. ZevoraTech does not have access to it. The only sharing is what you start yourself, such as sending a cell report or CSV file through your phone's share menu.</p>
+
+  <h2>6. Children</h2>
+  <p>NetScope is a utility for general audiences and is not directed at children under 13. We do not knowingly collect data from anyone.</p>
+
+  <h2>7. Your choices</h2>
+  <ul>
+    <li>Deny or withdraw the location, phone or notification permissions in your phone's settings. Some features will then show less information.</li>
+    <li>Leave logging and background monitoring off (they are off by default).</li>
+    <li>Delete the signal log or uninstall the app to remove everything stored on your phone.</li>
+  </ul>
+
+  <h2>8. Changes to this policy</h2>
+  <p>If the way the app handles data changes, we will update this page and the "last updated" date above, and the new policy will apply to the version that introduces the change.</p>
+
+  <h2>9. Contact</h2>
+  <p>Questions about this policy: <a href="mailto:info@zevoratech.in">info@zevoratech.in</a><br>
+  ZevoraTech · <a href="https://www.zevoratech.in">www.zevoratech.in</a></p>
+
+  <p class="foot-note">This policy applies to NetScope only. Our other apps, including WinClean Pro, Zevora Scan, and Zevora Sensor Lab, have their own separate privacy policies — see the <a href="privacy-policy.html">privacy policy index</a> on our website.</p>
+</main>
+</body>
+</html>
