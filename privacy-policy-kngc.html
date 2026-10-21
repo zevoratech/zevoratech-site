@@ -35,7 +35,7 @@
 
   <div class="card">
     <h2>In short</h2>
-    <p>This is a free, private directory for relatives of the Kongu Naattu Gounder community. You choose to register. Your name, village, district and kulam are listed for other members <strong>after an admin approves you</strong>. Your mobile number and address are shown only to an approved member who opens your profile. There are no advertisements, no analytics or tracking tools, and no cookies. We do not sell or share your details with anyone outside the directory, and you can edit or delete your registration yourself at any time.</p>
+    <p>This is a free, private directory for relatives of the Kongu Naattu Gounder community. You choose to register. Your name, village, district and kulam are listed for other members <strong>after an admin approves you</strong>. Your mobile number and address are shown only to an approved member who opens your profile. There are no advertisements, no analytics or tracking tools, and no cookies. We do not sell or share your details with anyone outside the directory (the only outside service we use is the one that sends our emails, see section 6), and you can edit or delete your registration yourself at any time.</p>
     <p>The admin approves registrations by checking the details you give and, if needed, contacting you. This is not a verification of identity: do not treat the directory as proof that someone is who they say they are.</p>
   </div>
 
@@ -62,6 +62,7 @@
       <li><strong>Family members' names and relation:</strong> shown to approved members only if you tick the box that allows it. Otherwise only you can see them.</li>
       <li><strong>Admins</strong> are the main admin and the taluk or district admins the main admin appoints. The main admin sees everything you entered, including your email and whether it is confirmed, and can approve, hide or delete registrations, handle reports and give a one-time password code. A taluk or district admin sees and handles only the registrations in their own area, and can delete only registrations that are still waiting for approval.</li>
       <li><strong>Admin phone numbers:</strong> to help you reach the right person, the phone number of the admin(s) for a taluk (or, if there is none, the district or the main admin) is shown on the registration and help pages, including to people who are not logged in. Names of admins are shown only to logged-in members. People become admins by their own agreement.</li>
+      <li><strong>Announcements and events:</strong> notices and event details posted by admins are shown to approved members of the area they are meant for (the whole community, a district or a taluk). They contain only what the admin writes, and the name of the admin who posted is visible only to the main admin.</li>
       <li>People who are not approved members, and search engines, cannot see the directory. The site asks search engines not to index it.</li>
       <li><strong>Please remember:</strong> any approved member can copy what they see. Register only if you are comfortable with that. Do not use other members' details for anything other than contacting them in good faith, and never to advertise, harass or sell.</li>
     </ul>
@@ -69,12 +70,12 @@
 
   <div class="card">
     <h2>3. Why we use it</h2>
-    <p>Only to run the directory: letting approved relatives find and contact each other, letting you log in, letting the admin approve and manage registrations, flagging possible duplicates (for example, the same address registered twice), and handling reports. We do not use your details for marketing, profiling or any automated decision.</p>
+    <p>Only to run the directory: letting approved relatives find and contact each other, letting you log in, letting the admin approve and manage registrations, flagging possible duplicates (for example, the same address registered twice), handling reports, sending the confirmation and password-reset emails you ask for, and showing announcements and events. We do not use your details for marketing, profiling or any automated decision.</p>
   </div>
 
   <div class="card">
     <h2>4. Where it is kept</h2>
-    <p>Details are stored in a database and served by Cloudflare (Workers and D1), which handles standard technical information needed to deliver a page, such as your IP address, as infrastructure. Cloudflare may keep database backups for a short period it sets. The site fonts and images are served from the site itself; no third-party scripts, fonts or trackers are loaded.</p>
+    <p>Details are stored in a database and served by Cloudflare (Workers and D1), which handles standard technical information needed to deliver a page, such as your IP address, as infrastructure. Cloudflare may keep database backups for a short period it sets. The main admin may also keep a private backup copy of the database for recovery; it is stored privately, is not shared, and is replaced over time. The site fonts and images are served from the site itself; no third-party scripts, fonts or trackers are loaded. If you give an email address, it is also handled by Resend, the external service we use only to send the emails described in section 6 (see below).</p>
   </div>
 
   <div class="card">
@@ -84,13 +85,14 @@
 
   <div class="card">
     <h2>6. Email and password reset</h2>
-    <p>An email address is optional and is used only to confirm that address and to send a password reset link if you forget your password. Email sending is not switched on yet; until it is, a forgotten password is reset by the admin, who gives you a one-time code (valid for 24 hours) over WhatsApp after checking it is you. If you contact the admin on WhatsApp, WhatsApp's own privacy policy applies to that chat.</p>
+    <p>An email address is optional. If you give one, we use it only to send you a confirmation link (to check that the address is yours) and, if you forget your password, a password reset link. These emails are sent through Resend, an external email-sending service, which receives your email address and the message so that it can deliver it; we do not use it for anything else, and we send no newsletters or advertisements. The reset link works only for the address you have confirmed.</p>
+    <p>If you have no confirmed email, or prefer not to use it, a forgotten password is reset by the admin, who gives you a one-time code (valid for 24 hours) over WhatsApp after checking it is you. If you contact the admin on WhatsApp, WhatsApp's own privacy policy applies to that chat.</p>
   </div>
 
   <div class="card">
     <h2>7. Your choices and deleting your data</h2>
     <ul>
-      <li>You can edit your details, hide or show your exact location, change your password, mobile number or email, or <strong>delete your registration</strong> from the "My account" page. Deleting removes your record, your login sessions and any codes at once. A report you made about someone else stays for the admin but is no longer linked to you.</li>
+      <li>You can edit your details, hide or show your exact location, change your password, mobile number or email, or <strong>delete your registration</strong> from the "My account" page. Deleting removes your record, your login sessions and any codes at once. A report you made about someone else stays for the admin but is no longer linked to you. In the admin activity log and in notices you posted (if you were an admin), your name is taken out of the older lines. One exception: if an <em>admin</em> deletes your registration, a log line naming you and the date is kept, so that admin actions can be reviewed.</li>
       <li>You can add, change or remove your occupation, blood group, donor choice and family list at any time on the "More details" page. Deleting your registration also deletes these details and your family list.</li>
       <li>You can also ask the admin on WhatsApp, or write to the address below, to correct or delete your details.</li>
       <li>The admin may hide or remove a registration that is fake, duplicated, or misused.</li>
@@ -126,6 +128,8 @@
       <li>நிர்வாகி அனுமதி என்பது அடையாளச் சரிபார்ப்பு அல்ல.</li>
       <li>கடவுச்சொல் படிக்க முடியாத வடிவில் (hash) மட்டுமே சேமிக்கப்படும். துல்லியமான இருப்பிடம் விருப்பத்துக்குரியது; நீங்கள் காட்டச் சொன்னால் மட்டுமே தெரியும்.</li>
       <li>விருப்பமானால் உங்கள் தொழில், இரத்த வகை, குடும்ப உறுப்பினர்களின் பெயர்களைச் சேர்க்கலாம். இரத்த வகை, குடும்பப் பெயர்கள் ஆகியவை நீங்கள் அனுமதித்தால் மட்டுமே அனுமதிக்கப்பட்ட உறுப்பினர்களுக்குத் தெரியும். எப்போது வேண்டுமானாலும் மாற்றலாம் அல்லது நீக்கலாம்.</li>
+      <li>மின்னஞ்சல் முகவரி விருப்பமானது. அதை உறுதிப்படுத்தும் இணைப்பையும், கடவுச்சொல் மறந்தால் மீட்பு இணைப்பையும் அனுப்ப மட்டுமே பயன்படுத்துவோம்; இந்த மின்னஞ்சல்கள் Resend என்ற வெளிச் சேவை மூலம் அனுப்பப்படும். விளம்பர மின்னஞ்சல் அனுப்பமாட்டோம்.</li>
+      <li>விருப்பமானால் ஒரு சிறிய படத்தை (புகைப்படம் அல்ல) தேர்ந்தெடுக்கலாம்; குடும்பத்தில் திருமணத்துக்குத் தயாராக மணமகன் அல்லது மணமகள் இருந்தால் அதை மட்டும் குறிப்பிடலாம். வேறு விவரம் எதுவும் தேவையில்லை.</li>
       <li>உங்கள் தாலுகா அல்லது மாவட்ட நிர்வாகி தன் பகுதியின் பதிவுகளை மட்டுமே பார்த்து அனுமதிப்பார். நிர்வாகிகளின் கைபேசி எண்கள் உதவிப் பக்கத்தில் எல்லோருக்கும் தெரியும்.</li>
       <li>"என் கணக்கு" பக்கத்தில் உங்கள் விவரங்களைத் திருத்தலாம் அல்லது பதிவை முழுமையாக நீக்கலாம்; நீக்கினால் உடனே அழிந்துவிடும்.</li>
       <li>18 வயது நிரம்பியவர்கள் மட்டுமே பதிவு செய்யலாம்.</li>
