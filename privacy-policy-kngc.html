@@ -31,11 +31,11 @@
 <header><a href="index.html">ZevoraTech</a> &nbsp;/&nbsp; <a href="products.html">Products</a></header>
 <main>
   <h1>Kongu Naattu Gounder Community — Privacy Policy</h1>
-  <p class="muted">Service: Kongu Naattu Gounder Community directory (கொங்கு நாட்டுக் கவுண்டர் சொந்தங்கள்) at <a href="https://kngc.in">kngc.in</a> · Operator: ZevoraTech, Perambalur, Tamil Nadu, India<br>Last updated: 27 October 2026 · Consent version 2026-10-21</p>
+  <p class="muted">Service: Kongu Naattu Gounder Community directory (கொங்கு நாட்டுக் கவுண்டர் சொந்தங்கள்) at <a href="https://kngc.in">kngc.in</a> · Operator: ZevoraTech, Perambalur, Tamil Nadu, India<br>Last updated: 28 October 2026 · Consent version 2026-10-21</p>
 
   <div class="card">
     <h2>In short</h2>
-    <p>This is a free, private directory for relatives of the Kongu Naattu Gounder community. You choose to register. Your name, village, district and kulam are listed for other members <strong>after an admin approves you</strong>. Your mobile number (unless you choose to hide it) and your address are shown only to an approved member who opens your profile. There are no advertisements, no analytics or tracking tools, and no cookies. We do not sell or share your details with anyone outside the directory (the only outside service we use is the one that sends our emails, see section 6), and you can edit or delete your registration yourself at any time.</p>
+    <p>This is a free, private directory for relatives of the Kongu Naattu Gounder community. You choose to register. Your name, village, district and kulam are listed for other members <strong>after an admin approves you</strong>. Your mobile number (unless you choose to hide it) and your address are shown only to an approved member who opens your profile. There are no advertisements, no analytics or tracking tools, and no cookies. We do not sell or share your details with anyone outside the directory (the only outside services we use are the ones that send our emails, see section 6, and, in the Android app only, the ones that deliver notifications, see section 5A), and you can edit or delete your registration yourself at any time.</p>
     <p>The admin approves registrations by checking the details you give and, if needed, contacting you. This is not a verification of identity: do not treat the directory as proof that someone is who they say they are.</p>
   </div>
 
@@ -47,6 +47,7 @@
       <li><strong>Optional extra details</strong> you may add on the "More details" page: your occupation; your blood group and whether you are ready to donate blood; and the names and relation of your family members (for example "Lakshmi – spouse"); a small picture (avatar) chosen from a fixed set, which is not a photo; and a note that a groom or a bride in your family is ready for marriage, with a confirmation that the person is of legal marriage age. We keep no other marriage details such as age, photo or horoscope. We do not ask for phone numbers, addresses or ages of family members. If you choose to show your family names to other members, those names can also be used when an approved member searches the directory: a search for a family member’s name will find your entry, and the list says which relative matched. Your family list is not searched if you do not choose to show it. Add only family members who are comfortable being listed; for children, a name only. All of this is optional and nothing here is needed to register.</li>
       <li><strong>Admin records:</strong> when an admin approves, hides, deletes or otherwise manages a registration, or changes an admin's area, a short log line (who did what to whom, and when) is kept so the main admin can review the work. Admins may also post announcements and event notices for approved members in their area. The main admin can download the member list as a file; each such download is logged, and the file contains the same details admins can already see.</li>
       <li><strong>Technical:</strong> a login token (kept as a hash on the server, valid for 180 days of use) and, to stop abuse, short-lived counters of attempts per mobile number and per network address (the address is stored only in scrambled form and is removed after at most a day).</li>
+      <li><strong>Notification address (Android app only):</strong> if you switch on notifications in the app, a device token (a random address for your phone issued by Google and Expo) and your language choice are stored with your record, together with your on/off choices for each kind of notification. The website never collects this. See section 5A.</li>
       <li><strong>Blood requests:</strong> if you post a request for blood, we keep the blood group, the hospital or town you write, an optional short note, the time, and a link to your member record so that your own mobile number can be shown as the contact. We ask you not to write the patient's name or any medical details. Posting is optional and needs your tick to show your mobile number.</li>
       <li><strong>News you send to the admin:</strong> if you send a condolence, wish or notice for the admin to publish, we keep the text you write and a link to your member record until the admin approves or rejects it. Please write only what you are happy for members to read. Rejected or old suggestions are deleted after 60 days.</li>
       <li><strong>Reports:</strong> if you report a profile, we keep your reason and which member sent it, for the admin to review.</li>
@@ -87,6 +88,18 @@
   <div class="card">
     <h2>5. On your phone</h2>
     <p>The site stores three things in your browser's own storage (not cookies): your login token, your language choice (Tamil or English) and your text-size choice. Logging out removes the token. If you add the site to your home screen, the browser may also keep a copy of the site's pages and images (not your personal details) so it opens faster and shows a basic page when offline.</p>
+  </div>
+
+  <div class="card">
+    <h2>5A. Notifications in the Android app</h2>
+    <p>This section applies <strong>only to the Kongu Naattu Gounder Community Android app</strong>. The website at kngc.in does not send notifications and does not use any of the services below; it still has no analytics, no cookies and no third-party scripts.</p>
+    <ul>
+      <li><strong>What is sent:</strong> if you allow notifications, the app gives our server a device token. When something is posted that is meant for you, our server sends the notification text and your device token to Expo's push service, which passes it to Google Firebase Cloud Messaging (FCM) so that it reaches your phone. These services receive only the token and the notification text; they do not receive your name, mobile number, address or any other detail from your record.</li>
+      <li><strong>What the text contains:</strong> for a notice or event, the title the admin wrote (so please expect it to be short and general); for a condolence or wish, only a general line asking you to open the app, never the names; for a blood request, the blood group and the hospital or town; when your registration is approved, a message saying so; admins also get a message that a new member is waiting, without the name. Mobile numbers are never put in a notification.</li>
+      <li><strong>Who gets what:</strong> only approved members in the area a post is meant for. Blood-request notifications go only to members who ticked "ready to donate", whose blood group can help, in the same district or state.</li>
+      <li><strong>Your control:</strong> you can switch each kind of notification on or off in the app, or turn off notifications for the app in your phone settings. Logging out, deleting your registration, or an unusable token removes the token from our server.</li>
+      <li>Google's and Expo's own privacy policies apply to how they handle the token while delivering the message. A notification shown on a locked screen can be read by anyone looking at your phone.</li>
+    </ul>
   </div>
 
   <div class="card">
@@ -140,6 +153,7 @@
       <li>விருப்பமானால் ஒரு சிறிய படத்தை (புகைப்படம் அல்ல) தேர்ந்தெடுக்கலாம்; குடும்பத்தில் திருமணத்துக்குத் தயாராக மணமகன் அல்லது மணமகள் இருந்தால் அதை மட்டும் குறிப்பிடலாம். வேறு விவரம் எதுவும் தேவையில்லை.</li>
       <li>உங்கள் தாலுகா அல்லது மாவட்ட நிர்வாகி தன் பகுதியின் பதிவுகளை மட்டுமே பார்த்து அனுமதிப்பார். நிர்வாகிகளின் கைபேசி எண்கள் உதவிப் பக்கத்தில் எல்லோருக்கும் தெரியும்.</li>
       <li>"என் கணக்கு" பக்கத்தில் உங்கள் விவரங்களைத் திருத்தலாம் அல்லது பதிவை முழுமையாக நீக்கலாம்; நீக்கினால் உடனே அழிந்துவிடும்.</li>
+      <li><strong>Android செயலி மட்டும்:</strong> நீங்கள் அனுமதித்தால், அறிவிப்புகளை அனுப்ப உங்கள் தொலைபேசிக்கான device token சேமிக்கப்படும். அறிவிப்பு உரையும் token-உம் மட்டும் Expo மற்றும் Google FCM சேவைகள் வழியாகச் செல்லும்; உங்கள் பெயர், கைபேசி எண், முகவரி அவற்றுக்குச் செல்லாது. நிர்வாகி எழுதிய அறிவிப்பு/நிகழ்வுத் தலைப்பு, இரத்தத் தேவையில் இரத்த வகையும் ஊரும் அறிவிப்பில் வரும்; இரங்கல், வாழ்த்துகளில் பெயர் வராது. ஒவ்வொரு வகை அறிவிப்பையும் செயலியில் நிறுத்தலாம். இணையதளம் இவற்றைப் பயன்படுத்தாது; அதில் முன்போலவே கண்காணிப்பு, cookies இல்லை.</li>
       <li>18 வயது நிரம்பியவர்கள் மட்டுமே பதிவு செய்யலாம்.</li>
       <li>தொடர்புக்கு: <a href="mailto:info@zevoratech.in">info@zevoratech.in</a>, அல்லது நிர்வாகியை WhatsApp-ல் தொடர்புகொள்ளுங்கள்.</li>
     </ul>
