@@ -228,6 +228,7 @@ footer a:hover{color:var(--blue-light);}
 }
 .status::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--steel-light);flex-shrink:0;}
 .status.is-live::before{background:var(--ok);}
+.status.is-done::before{content:"\2713";width:16px;height:16px;border-radius:50%;background:var(--ok);color:#fff;font-size:10px;line-height:16px;text-align:center;font-weight:700;}
 .status.is-progress::before{background:var(--blue);}
 .status.on-dark{color:#c7cdda;}
 
