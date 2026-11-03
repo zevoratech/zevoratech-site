@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Contact — ZevoraTech</title>
 <meta name="description" content="Get in touch with ZevoraTech about a software project.">
+<meta name="theme-color" content="#fbfcff">
 <link rel="canonical" href="https://www.zevoratech.in/contact.html">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Contact — ZevoraTech">
@@ -16,91 +17,66 @@
 <meta name="twitter:description" content="Get in touch with ZevoraTech about a software project.">
 <meta name="twitter:image" content="https://www.zevoratech.in/assets/logo2-icon-square.png">
 <link rel="icon" href="assets/logo2-icon-square.png">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Hanken+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
+<script>document.documentElement.className+=' js';</script>
 </head>
 <body>
-
-<nav class="nav">
+<a class="skip" href="#main">Skip to content</a>
+<nav class="nav" id="nav" aria-label="Main">
   <div class="container">
-    <a href="index.html" class="brand"><img src="assets/logo2-mark-t.png" alt="ZevoraTech logo">ZevoraTech</a>
+    <a href="index.html" class="brand"><img src="assets/logo2-mark-t.png" alt="">ZevoraTech</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Menu" aria-expanded="false" aria-controls="navLinks"><span></span><span></span><span></span></button>
     <div class="nav-links" id="navLinks">
       <a href="index.html">Home</a>
       <a href="products.html">Products</a>
       <a href="about.html">About</a>
-      <a href="contact.html" class="active">Contact</a>
+      <a href="contact.html" class="active" aria-current="page">Contact</a>
+      <a href="contact.html" class="btn btn-primary">Start a project</a>
     </div>
-    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
-      <span></span><span></span><span></span>
-    </button>
   </div>
 </nav>
 
+<main id="main">
 <header class="page-hero">
   <div class="container">
-    <h1>Tell us what you're building.</h1>
-    <p>Whether it's a custom project or just a question about our roadmap, we read every message.</p>
+    <h1>Tell us what you&rsquo;re building.</h1>
+    <p>Whether it&rsquo;s a custom project or just a question about our roadmap, we read every message.</p>
   </div>
 </header>
 
-<section>
+<section style="padding-top:24px;">
   <div class="container contact-grid">
-    <div>
-      <div class="section-head">
+    <div data-reveal>
+      <div class="sec-head" style="margin-bottom:20px;">
         <h2>Talk to ZevoraTech.</h2>
         <p>We typically reply within one business day.</p>
       </div>
-      <div class="info-row">
-        <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h16v12H4z"/><path d="M4 7l8 6 8-6"/></svg></div>
-        <div><h4>Email</h4><p><a href="mailto:info@zevoratech.in">info@zevoratech.in</a></p></div>
-      </div>
-      <div class="info-row">
-        <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg></div>
-        <div><h4>Website</h4><p>zevoratech.in</p></div>
-      </div>
-      <div class="info-row">
-        <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg></div>
-        <div><h4>Working hours</h4><p>Monday–Friday, 10am–6pm IST</p></div>
-      </div>
+      <div class="info-row"><div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 6h16v12H4z"/><path d="M4 7l8 6 8-6"/></svg></div><div><h4>Email</h4><p><a href="mailto:info@zevoratech.in">info@zevoratech.in</a></p></div></div>
+      <div class="info-row"><div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg></div><div><h4>Website</h4><p>zevoratech.in</p></div></div>
+      <div class="info-row"><div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg></div><div><h4>Working hours</h4><p>Monday&ndash;Friday, 10am&ndash;6pm IST</p></div></div>
     </div>
-    <div>
+    <div class="form-card" data-reveal style="--i:1">
       <form id="contactForm">
-        <div class="form-field">
-          <label for="name">Name</label>
-          <input id="name" name="name" type="text" required placeholder="Your full name">
-        </div>
-        <div class="form-field">
-          <label for="email">Email</label>
-          <input id="email" name="email" type="email" required placeholder="you@company.com">
-        </div>
-        <div class="form-field">
-          <label for="topic">What's this about?</label>
-          <select id="topic" name="topic">
-            <option>Custom software project</option>
-            <option>Question about a product</option>
-            <option>Partnership</option>
-            <option>Something else</option>
-          </select>
-        </div>
-        <div class="form-field">
-          <label for="message">Message</label>
-          <textarea id="message" name="message" required placeholder="A few details about what you need"></textarea>
-        </div>
+        <div class="form-field"><label for="name">Name</label><input id="name" name="name" type="text" required placeholder="Your full name" autocomplete="name"></div>
+        <div class="form-field"><label for="email">Email</label><input id="email" name="email" type="email" required placeholder="you@company.com" autocomplete="email"></div>
+        <div class="form-field"><label for="topic">What&rsquo;s this about?</label>
+          <select id="topic" name="topic"><option>Custom software project</option><option>Question about a product</option><option>Partnership</option><option>Something else</option></select></div>
+        <div class="form-field"><label for="message">Message</label><textarea id="message" name="message" required placeholder="A few details about what you need"></textarea></div>
         <button type="submit" class="btn btn-primary" style="width:100%;">Send message</button>
-        <div class="form-status" id="formStatus"></div>
+        <div class="form-status" id="formStatus" role="status" aria-live="polite"></div>
         <p class="form-fallback">Prefer email directly? Write to <a href="mailto:info@zevoratech.in">info@zevoratech.in</a>.</p>
       </form>
     </div>
   </div>
 </section>
-
+</main>
 <footer>
   <div class="container">
     <div class="footer-grid">
       <div>
-        <div class="footer-brand"><img src="assets/logo2-mark-dark.png" alt="ZevoraTech logo">ZevoraTech</div>
-        <p style="color:#8790a0;font-size:14.5px;max-width:280px;">A software studio building custom applications and a growing line of our own products.</p>
+        <div class="footer-brand"><img src="assets/logo2-mark-dark.png" alt="">ZevoraTech</div>
+        <p>A software studio in Perambalur, Tamil Nadu, building custom applications and its own line of products.</p>
       </div>
       <div>
         <h4>Site</h4>
@@ -116,17 +92,16 @@
         <ul>
           <li><a href="mailto:info@zevoratech.in">info@zevoratech.in</a></li>
           <li><a href="contact.html">Work with us</a></li>
-          <li><a href="privacy-policy.html">Privacy Policy</a></li>
+          <li><a href="privacy-policy.html">Privacy policy</a></li>
         </ul>
       </div>
     </div>
     <div class="footer-bottom">
-      <span>© <span id="year"></span> ZevoraTech. All rights reserved.</span>
+      <span>&copy; <span id="year"></span> ZevoraTech. All rights reserved.</span>
       <span>zevoratech.in</span>
     </div>
   </div>
 </footer>
-
 <script src="script.js"></script>
 </body>
 </html>

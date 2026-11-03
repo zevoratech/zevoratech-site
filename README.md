@@ -1,22 +1,20 @@
 # ZevoraTech website
 
-Plain static site (HTML, CSS, one JS file). No build step.
+Plain static site (HTML, CSS, one JS file). No build step, no framework.
 
 ## Files
 - `index.html`, `products.html`, `about.html`, `contact.html` - main pages
-- `privacy-policy.html` - site policy; `privacy-policy-<product>.html` - one per product (winclean, netscope, zevorasensorlab, kaalanilai, kngc)
-- `child-safety-kngc.html` - child safety standards page for the KNGC app (Play Store requirement)
-- `styles.css`, `script.js` - shared styling, menu, home slideshow, contact form (Web3Forms)
-- `robots.txt`, `sitemap.xml` - search engines (update the sitemap when you add a page)
-- `assets/` - logos and the slide image
+- `privacy-policy.html` and `privacy-policy-<product>.html` - policies; `child-safety-kngc.html` - KNGC child safety standards
+- `styles.css` - all styling (colours and fonts are variables at the top)
+- `script.js` - menu, headline and scroll animations, contact and "notify me" forms (Web3Forms)
+- `robots.txt`, `sitemap.xml` - search engines (add new pages to the sitemap)
+- `assets/` - logos and the KNGC photo
 
 ## Publishing
-Upload the changed files to the `zevoratech-site` repo on GitHub (Add file > Upload files). It deploys automatically.
+Upload the changed files (and the `assets` folder if it changed) to the `zevoratech-site` repo on GitHub: Add file > Upload files. The site updates in a minute or two; hard refresh (Ctrl+F5) to see it.
 
 ## Adding a product
-1. Add a card in `products.html` (and a slide in `index.html` if it should be featured).
-2. Add its `privacy-policy-<name>.html`, link it from `privacy-policy.html`, and add it to `sitemap.xml`.
+Copy an existing product card in `products.html` (and in `index.html` if it should be featured), then add its privacy policy page and a line in `sitemap.xml`.
 
-## Notes
-- KNGC address is https://kngc.in (old kngc.zevoratech.in redirects later).
-- Home slideshow notes: `README-slider.txt`.
+## Motion
+The hero orbit and headline animate once on load. Cards and graphics animate when scrolled into view. Everything is switched off for visitors who set "reduce motion" on their device.

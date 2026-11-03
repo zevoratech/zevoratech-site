@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>ZevoraTech — Software, engineered</title>
 <meta name="description" content="ZevoraTech builds custom software, cloud infrastructure, and digital products for growing businesses.">
+<meta name="theme-color" content="#fbfcff">
 <link rel="canonical" href="https://www.zevoratech.in/">
 <meta property="og:type" content="website">
 <meta property="og:title" content="ZevoraTech — Software, engineered">
@@ -24,300 +25,194 @@
   "logo": "https://www.zevoratech.in/assets/logo2-icon-square.png",
   "email": "info@zevoratech.in",
   "description": "ZevoraTech is a software studio building custom applications, cloud systems, and its own line of software products.",
-  "address": {
-    "@type": "PostalAddress",
-    "addressLocality": "Perambalur",
-    "addressRegion": "Tamil Nadu",
-    "addressCountry": "IN"
-  }
+  "address": {"@type": "PostalAddress", "addressLocality": "Perambalur", "addressRegion": "Tamil Nadu", "addressCountry": "IN"}
 }
 </script>
 <link rel="icon" href="assets/logo2-icon-square.png">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Hanken+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
+<script>document.documentElement.className+=' js';</script>
 </head>
 <body>
-
-<nav class="nav">
+<a class="skip" href="#main">Skip to content</a>
+<nav class="nav" id="nav" aria-label="Main">
   <div class="container">
-    <a href="index.html" class="brand"><img src="assets/logo2-mark-t.png" alt="ZevoraTech logo">ZevoraTech</a>
+    <a href="index.html" class="brand"><img src="assets/logo2-mark-t.png" alt="">ZevoraTech</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Menu" aria-expanded="false" aria-controls="navLinks"><span></span><span></span><span></span></button>
     <div class="nav-links" id="navLinks">
-      <a href="index.html" class="active">Home</a>
+      <a href="index.html" class="active" aria-current="page">Home</a>
       <a href="products.html">Products</a>
       <a href="about.html">About</a>
       <a href="contact.html">Contact</a>
+      <a href="contact.html" class="btn btn-primary">Start a project</a>
     </div>
-    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
-      <span></span><span></span><span></span>
-    </button>
   </div>
 </nav>
 
-<header class="slider" id="heroSlider" role="region" aria-roledescription="carousel" aria-label="ZevoraTech highlights">
-  <div class="slides">
-
-    <article class="slide s-brand is-active" role="group" aria-roledescription="slide" aria-label="1 of 5">
-      <div class="container slide-inner">
-        <div class="slide-text">
-          <span class="chip">Software studio</span>
-          <h1>Software for the systems that keep your business running.</h1>
-          <p class="lead">ZevoraTech designs and builds the applications, platforms, and cloud systems that let growing businesses move faster &mdash; from first line of code to production.</p>
-          <div class="hero-actions">
-            <a href="contact.html" class="btn btn-primary">Start a project</a>
-            <a href="products.html" class="btn btn-ghost-dark">See our work</a>
-          </div>
-        </div>
-        <div class="slide-art">
-          <div class="spec-panel">
-            <div class="spec-panel-mark"><img src="assets/logo2-mark-dark.png" alt="ZevoraTech mark"></div>
-            <dl>
-              <div class="spec-row"><dt>Studio</dt><dd>ZevoraTech</dd></div>
-              <div class="spec-row"><dt>Systems shipped</dt><dd>5</dd></div>
-              <div class="spec-row"><dt>Industries served</dt><dd>Manufacturing, Healthcare, Finance</dd></div>
-              <div class="spec-row"><dt>Build stack</dt><dd>Native, cloud-first</dd></div>
-            </dl>
-          </div>
-        </div>
+<main id="main">
+<header class="hero">
+  <div class="container">
+    <div class="hero-copy">
+      <span class="chip"><i></i>Software studio &middot; Perambalur, Tamil Nadu</span>
+      <h1 data-split>Software for the systems that keep your business running.</h1>
+      <p class="lead">ZevoraTech designs and builds the applications, platforms, and cloud systems that let growing businesses move faster &mdash; from first line of code to production.</p>
+      <div class="hero-actions">
+        <a href="contact.html" class="btn btn-primary">Start a project <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        <a href="products.html" class="btn btn-ghost">See our products</a>
       </div>
-    </article>
-
-    <article class="slide s-winclean" role="group" aria-roledescription="slide" aria-label="2 of 5" aria-hidden="true">
-      <div class="container slide-inner">
-        <div class="slide-text">
-          <span class="chip chip-live">Available now &middot; Windows</span>
-          <h2>WinClean Pro</h2>
-          <p class="lead">Free up space and clear out junk and duplicates &mdash; with a quarantine and a restore point before anything is deleted. Runs on your PC, with no account and no internet needed.</p>
-          <div class="hero-actions">
-            <a href="https://github.com/zevoratech/zevoratech-site/releases/latest/download/WinClean.Pro.Setup.exe" class="btn btn-primary" rel="noopener" tabindex="-1">Download for Windows</a>
-            <a href="products.html" class="btn btn-ghost-dark" tabindex="-1">Learn more</a>
-          </div>
-        </div>
-        <div class="slide-art" aria-hidden="true">
-          <svg viewBox="0 0 380 300" class="art">
-            <rect x="20" y="24" width="340" height="252" rx="16" class="a-fill a-line"/>
-            <circle cx="42" cy="46" r="5" class="a-dot"/><circle cx="60" cy="46" r="5" class="a-dot"/><circle cx="78" cy="46" r="5" class="a-dot"/>
-            <circle cx="110" cy="150" r="52" class="a-ring-bg"/>
-            <circle cx="110" cy="150" r="52" class="a-ring" pathLength="100" stroke-dasharray="78 100" transform="rotate(-90 110 150)"/>
-            <text x="110" y="158" text-anchor="middle" class="a-num">78%</text>
-            <rect x="196" y="104" width="136" height="12" rx="6" class="a-bar"/>
-            <rect x="196" y="104" width="96" height="12" rx="6" class="a-bar-on"/>
-            <rect x="196" y="136" width="136" height="12" rx="6" class="a-bar"/>
-            <rect x="196" y="136" width="58" height="12" rx="6" class="a-bar-on"/>
-            <rect x="196" y="168" width="136" height="12" rx="6" class="a-bar"/>
-            <rect x="196" y="168" width="118" height="12" rx="6" class="a-bar-on"/>
-            <rect x="196" y="204" width="136" height="30" rx="15" class="a-pill"/>
-            <path d="M214 219l6 6 12-13" class="a-check"/>
-          </svg>
-        </div>
-      </div>
-    </article>
-
-    <article class="slide s-netscope" role="group" aria-roledescription="slide" aria-label="3 of 5" aria-hidden="true">
-      <div class="container slide-inner">
-        <div class="slide-text">
-          <span class="chip chip-live">Available now &middot; Android</span>
-          <h2>NetScope</h2>
-          <p class="lead">Signal strength, cell and Wi-Fi details, speed tests, and connection diagnostics &mdash; all in one Android app.</p>
-          <div class="hero-actions">
-            <a href="https://play.google.com/store/apps/details?id=com.zevoratech.netscope" class="btn btn-primary" target="_blank" rel="noopener" tabindex="-1">Get it on Google Play</a>
-            <a href="products.html" class="btn btn-ghost-dark" tabindex="-1">Learn more</a>
-          </div>
-        </div>
-        <div class="slide-art" aria-hidden="true">
-          <svg viewBox="0 0 380 300" class="art">
-            <g class="a-arcs" fill="none" stroke-linecap="round">
-              <path d="M149.2 191.8A46 46 0 0 1 210.8 191.8" style="opacity:1"/>
-              <path d="M121.1 160.6A88 88 0 0 1 238.9 160.6" style="opacity:0.75"/>
-              <path d="M93.0 129.4A130 130 0 0 1 267.0 129.4" style="opacity:0.5"/>
-              <path d="M64.9 98.2A172 172 0 0 1 295.1 98.2" style="opacity:0.3"/>
-            </g>
-            <circle cx="180" cy="226" r="9" class="a-dotbig"/>
-            <g class="a-bars" transform="translate(-6 8)">
-              <rect x="250" y="226" width="14" height="22" rx="3"/><rect x="272" y="212" width="14" height="36" rx="3"/>
-              <rect x="294" y="196" width="14" height="52" rx="3"/><rect x="316" y="178" width="14" height="70" rx="3" style="opacity:.35"/>
-            </g>
-            <text x="180" y="276" text-anchor="middle" class="a-num sm">-67 dBm</text>
-          </svg>
-        </div>
-      </div>
-    </article>
-
-    <article class="slide s-sensor" role="group" aria-roledescription="slide" aria-label="4 of 5" aria-hidden="true">
-      <div class="container slide-inner">
-        <div class="slide-text">
-          <span class="chip chip-soon">In testing &middot; Android</span>
-          <h2>Zevora Sensor Lab</h2>
-          <p class="lead">Compass, spirit level, altimeter, lux meter, metal detector, g-force meter, step counter, and live dashboards for every sensor on your phone &mdash; fully on-device.</p>
-          <div class="hero-actions">
-            <a href="https://play.google.com/store/apps/details?id=in.zevoratech.sensorlab" class="btn btn-primary" target="_blank" rel="noopener" tabindex="-1">Get it on Google Play</a>
-            <a href="products.html" class="btn btn-ghost-dark" tabindex="-1">Learn more</a>
-          </div>
-        </div>
-        <div class="slide-art" aria-hidden="true">
-          <svg viewBox="0 0 380 300" class="art">
-            <circle cx="190" cy="132" r="104" class="a-fill a-line"/>
-            <circle cx="190" cy="132" r="92" fill="none" class="a-ticks" stroke-dasharray="2 14.4"/>
-            <g transform="rotate(38 190 132)">
-              <polygon points="190,50 202,132 178,132" class="a-needle"/>
-              <polygon points="190,214 202,132 178,132" class="a-needle-b"/>
-            </g>
-            <circle cx="190" cy="132" r="7" class="a-dotbig"/>
-            <text x="190" y="64" text-anchor="middle" class="a-num sm">N</text>
-            <rect x="90" y="262" width="200" height="22" rx="11" class="a-fill a-line"/>
-            <circle cx="214" cy="273" r="8" class="a-dotbig"/>
-            <line x1="190" y1="262" x2="190" y2="284" class="a-line"/>
-          </svg>
-        </div>
-      </div>
-    </article>
-
-    <article class="slide s-kngc" role="group" aria-roledescription="slide" aria-label="5 of 5" aria-hidden="true">
-      <div class="container slide-inner">
-        <div class="slide-text">
-          <span class="chip chip-soon">In testing &middot; Android &amp; web</span>
-          <h2>Kongu Naattu Gounder Community</h2>
-          <p class="lead">A free, private directory that helps relatives find and stay in touch with each other &mdash; in Tamil and English, with every registration approved by an admin.</p>
-          <div class="hero-actions">
-            <a href="https://play.google.com/store/apps/details?id=in.zevoratech.kngc" class="btn btn-primary" target="_blank" rel="noopener" tabindex="-1">Get it on Google Play</a>
-            <a href="products.html" class="btn btn-ghost-dark" tabindex="-1">Learn more</a>
-          </div>
-        </div>
-      </div>
-    </article>
-
-  </div>
-
-  <div class="slider-ui container">
-    <div class="dots">
-      <button type="button" class="dot is-active" aria-label="Go to slide 1" aria-current="true"><i></i></button>
-      <button type="button" class="dot" aria-label="Go to slide 2"><i></i></button>
-      <button type="button" class="dot" aria-label="Go to slide 3"><i></i></button>
-      <button type="button" class="dot" aria-label="Go to slide 4"><i></i></button>
-      <button type="button" class="dot" aria-label="Go to slide 5"><i></i></button>
     </div>
-    <div class="ctrls">
-      <button type="button" class="ctrl" id="sPause" aria-label="Pause slideshow"><svg viewBox="0 0 24 24" aria-hidden="true"><path class="i-pause" d="M8 5v14M16 5v14"/><path class="i-play" d="M8 5l11 7-11 7z"/></svg></button>
-      <button type="button" class="ctrl" id="sPrev" aria-label="Previous slide"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg></button>
-      <button type="button" class="ctrl" id="sNext" aria-label="Next slide"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg></button>
-    </div>
+    <div class="orbit" aria-label="ZevoraTech products">
+        <div class="orbit-core"><img src="assets/logo2-icon-square.png" alt="ZevoraTech"></div>
+        <div class="ring r1">
+          <div class="node" style="--a:60deg"><div class="pin"><a href="products.html#winclean" style="--c:#2f5bff"><b>W</b>WinClean Pro</a></div></div>
+          <div class="node" style="--a:240deg"><div class="pin"><a href="products.html#sensorlab" style="--c:#7a5cff"><b>S</b>Sensor Lab</a></div></div>
+        </div>
+        <div class="ring r2">
+          <div class="node" style="--a:0deg"><div class="pin"><a href="products.html#netscope" style="--c:#0f9ad8"><b>N</b>NetScope</a></div></div>
+          <div class="node" style="--a:120deg"><div class="pin"><a href="products.html#kaalanilai" style="--c:#e9a825"><b>K</b>Kaalanilai</a></div></div>
+          <div class="node" style="--a:240deg"><div class="pin"><a href="products.html#kngc" style="--c:#14935b"><b>G</b>KNGC</a></div></div>
+        </div>
+      </div>
   </div>
 </header>
 
+<section class="bg-mist" id="products">
+  <div class="container">
+    <div class="sec-head" data-reveal>
+      <h2>Our own products, in people&rsquo;s hands.</h2>
+      <p>Two are live today and three are in testing. Each one runs on the phone or PC it was made for.</p>
+    </div>
+    <div class="pgrid">
+      <article class="pcard" id="winclean" data-art>
+        <div class="art" style="--tint:#e6edff"><svg viewBox="0 0 380 300" aria-hidden="true"><rect x="20" y="24" width="340" height="252" rx="16" class="a-fill a-line"/><circle cx="42" cy="46" r="5" class="a-dot"/><circle cx="60" cy="46" r="5" class="a-dot"/><circle cx="78" cy="46" r="5" class="a-dot"/><circle cx="110" cy="150" r="52" class="a-ring-bg"/><circle cx="110" cy="150" r="52" class="a-ring" pathLength="100" stroke-dasharray="78 100" transform="rotate(-90 110 150)"/><text x="110" y="158" text-anchor="middle" class="a-num">78%</text><rect x="196" y="104" width="136" height="12" rx="6" class="a-bar"/><rect x="196" y="104" width="96" height="12" rx="6" class="a-bar-on"/><rect x="196" y="136" width="136" height="12" rx="6" class="a-bar"/><rect x="196" y="136" width="58" height="12" rx="6" class="a-bar-on"/><rect x="196" y="168" width="136" height="12" rx="6" class="a-bar"/><rect x="196" y="168" width="118" height="12" rx="6" class="a-bar-on"/><rect x="196" y="204" width="136" height="30" rx="15" class="a-pill"/><path d="M214 219l6 6 12-13" class="a-check"/></svg></div>
+        <div class="body">
+          <div class="meta"><span class="tag">Windows utility</span><span class="status is-live">Available now</span></div>
+          <h3>WinClean Pro</h3>
+          <p>Free up space and clear out junk and duplicates, with a quarantine and a restore point before anything is deleted. No account, no internet needed.</p>
+          <div class="card-links">
+          <a href="https://github.com/zevoratech/zevoratech-site/releases/latest/download/WinClean.Pro.Setup.exe" class="btn btn-small btn-primary" rel="noopener">Download for Windows</a>
+          <a href="privacy-policy-winclean.html" class="btn btn-small btn-ghost">Privacy policy</a>
+          </div>
+        </div>
+      </article>
+      <article class="pcard" id="netscope" data-art>
+        <div class="art" style="--tint:#e3f1ff"><svg viewBox="0 0 380 300" aria-hidden="true"><g class="a-arcs" fill="none" stroke-linecap="round"><path d="M149.2 191.8A46 46 0 0 1 210.8 191.8"/><path d="M121.1 160.6A88 88 0 0 1 238.9 160.6"/><path d="M93.0 129.4A130 130 0 0 1 267.0 129.4"/><path d="M64.9 98.2A172 172 0 0 1 295.1 98.2"/></g><circle cx="180" cy="226" r="9" class="a-dotbig"/><g class="a-bars" transform="translate(-6 8)"><rect x="250" y="226" width="14" height="22" rx="3"/><rect x="272" y="212" width="14" height="36" rx="3"/><rect x="294" y="196" width="14" height="52" rx="3"/><rect x="316" y="178" width="14" height="70" rx="3" style="opacity:.35"/></g><text x="180" y="276" text-anchor="middle" class="a-num sm">-67 dBm</text></svg></div>
+        <div class="body">
+          <div class="meta"><span class="tag">Android utility</span><span class="status is-live">Available now</span></div>
+          <h3>NetScope</h3>
+          <p>Signal strength, cell and Wi-Fi details, speed tests, and connection diagnostics in one Android app.</p>
+          <div class="card-links">
+          <a href="https://play.google.com/store/apps/details?id=com.zevoratech.netscope" class="btn btn-small btn-primary" target="_blank" rel="noopener">Get it on Google Play</a>
+          <a href="privacy-policy-netscope.html" class="btn btn-small btn-ghost">Privacy policy</a>
+          </div>
+        </div>
+      </article>
+      <article class="pcard" id="sensorlab" data-art>
+        <div class="art" style="--tint:#ece9ff"><svg viewBox="0 0 380 300" aria-hidden="true"><circle cx="190" cy="132" r="104" class="a-fill a-line"/><circle cx="190" cy="132" r="92" fill="none" class="a-ticks" stroke-dasharray="2 14.4"/><g class="needle"><polygon points="190,50 202,132 178,132" class="a-needle"/><polygon points="190,214 202,132 178,132" class="a-needle-b"/></g><circle cx="190" cy="132" r="7" class="a-dotbig"/><text x="190" y="72" text-anchor="middle" class="a-num sm">N</text><rect x="90" y="262" width="200" height="22" rx="11" class="a-fill a-line"/><circle cx="214" cy="273" r="8" class="a-dotbig"/><line x1="190" y1="262" x2="190" y2="284" class="a-line"/></svg></div>
+        <div class="body">
+          <div class="meta"><span class="tag">Android utility</span><span class="status is-progress">In testing</span></div>
+          <h3>Zevora Sensor Lab</h3>
+          <p>Compass, spirit level, altimeter, lux meter, metal detector, g-force meter and more. Fully on-device.</p>
+          <div class="card-links">
+          <a href="https://play.google.com/store/apps/details?id=in.zevoratech.sensorlab" class="btn btn-small btn-primary" target="_blank" rel="noopener">Get it on Google Play</a>
+          <a href="privacy-policy-zevorasensorlab.html" class="btn btn-small btn-ghost">Privacy policy</a>
+          </div>
+        </div>
+      </article>
+      <article class="pcard wide" id="kngc" data-art>
+        <div class="art" style="--tint:#0f3d24"><img src="assets/kngc-slide.jpg" alt="" loading="lazy"></div>
+        <div class="body">
+          <div class="meta"><span class="tag">Android app &middot; Web app &middot; Community</span><span class="status is-progress">In testing</span></div>
+          <h3>Kongu Naattu Gounder Community</h3>
+          <p>A free, private directory that helps relatives find and stay in touch, in Tamil and English. Every registration is approved by an admin.</p>
+          <div class="card-links">
+          <a href="https://play.google.com/store/apps/details?id=in.zevoratech.kngc" class="btn btn-small btn-primary" target="_blank" rel="noopener">Get it on Google Play</a>
+          <a href="https://kngc.in" class="btn btn-small btn-ghost" target="_blank" rel="noopener">Open website</a>
+          <span class="brk"></span>
+          <a href="privacy-policy-kngc.html" class="btn btn-small btn-ghost">Privacy policy</a>
+          <a href="child-safety-kngc.html" class="btn btn-small btn-ghost">Child safety</a>
+          </div>
+        </div>
+      </article>
+      <article class="pcard wide" id="kaalanilai" data-art>
+        <div class="art" style="--tint:#fff3d9"><svg viewBox="0 0 380 300" aria-hidden="true"><circle cx="236" cy="96" r="42" class="a-sun"/><path d="M110 196a40 40 0 0 1 6-79 56 56 0 0 1 108 12 36 36 0 0 1 10 67z" class="a-cloud"/><line x1="130" y1="226" x2="124" y2="246" class="a-drop"/><line x1="170" y1="226" x2="164" y2="246" class="a-drop"/><line x1="210" y1="226" x2="204" y2="246" class="a-drop"/><text x="300" y="250" text-anchor="middle" class="a-num sm">32&deg;C</text></svg></div>
+        <div class="body">
+          <div class="meta"><span class="tag">Android app &middot; Weather</span><span class="status is-progress">In testing</span></div>
+          <h3>Kaalanilai</h3>
+          <p>A free weather app for Tamil Nadu, in Tamil and English: current conditions, rain forecast and air quality for your area. No ads, no sign-up.</p>
+          <div class="card-links">
+          <a href="https://play.google.com/store/apps/details?id=in.zevoratech.kaalanilai" class="btn btn-small btn-primary" target="_blank" rel="noopener">Get it on Google Play</a>
+          <a href="privacy-policy-kaalanilai.html" class="btn btn-small btn-ghost">Privacy policy</a>
+          </div>
+        </div>
+      </article>
+    </div>
+    <p style="margin-top:36px;"><a href="products.html" class="btn btn-ghost">All products and client work <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></p>
+  </div>
+</section>
+
 <section>
-  <div class="container">
-    <div class="section-head">
+  <div class="container split">
+    <div class="sec-head" data-reveal>
       <h2>Six disciplines, one team.</h2>
-      <p>We work end to end — from the first architecture decision to the system that keeps running long after launch.</p>
+      <p>We work end to end &mdash; from the first architecture decision to the system that keeps running long after launch.</p>
     </div>
-    <div class="capability-list">
-      <div class="capability-row">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="13" rx="1.5"/><path d="M8 21h8M12 17v4"/></svg>
-        <div>
-          <h3>Custom software</h3>
-          <p>Web and desktop applications built around how your team actually works, not a generic template.</p>
-        </div>
-      </div>
-      <div class="capability-row">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M7 18a4 4 0 0 1-1-7.87A5.5 5.5 0 0 1 16.5 8h.5a4 4 0 0 1 1 7.87"/><path d="M8 18h8"/></svg>
-        <div>
-          <h3>Cloud &amp; infrastructure</h3>
-          <p>Architecture, deployment, and hosting that scales with you and stays secure by default.</p>
-        </div>
-      </div>
-      <div class="capability-row">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>
-        <div>
-          <h3>Product engineering</h3>
-          <p>We help take an idea from prototype to a real product people can rely on.</p>
-        </div>
-      </div>
-      <div class="capability-row">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v4M12 17v4M3 12h4M17 12h4"/><circle cx="12" cy="12" r="4.5"/></svg>
-        <div>
-          <h3>Support &amp; maintenance</h3>
-          <p>Ongoing monitoring, fixes, and improvements so your software stays fast and dependable.</p>
-        </div>
-      </div>
-      <div class="capability-row">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="6" r="2.5"/><circle cx="18" cy="18" r="2.5"/><path d="M8 6h6a4 4 0 0 1 4 4v6"/></svg>
-        <div>
-          <h3>Integrations</h3>
-          <p>Connecting the tools you already use so data moves cleanly between them.</p>
-        </div>
-      </div>
-      <div class="capability-row">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19V9M12 19V5M20 19v-6"/></svg>
-        <div>
-          <h3>Consulting</h3>
-          <p>An outside technical eye on your roadmap, stack decisions, and team process.</p>
-        </div>
-      </div>
+    <div class="svc">
+      <div class="svc-row" data-reveal style="--i:0"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="13" rx="1.5"/><path d="M8 21h8M12 17v4"/></svg></div><div><h3>Custom software</h3><p>Web and desktop applications built around how your team actually works, not a generic template.</p></div></div>
+      <div class="svc-row" data-reveal style="--i:1"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 18a4 4 0 0 1-1-7.87A5.5 5.5 0 0 1 16.5 8h.5a4 4 0 0 1 1 7.87"/><path d="M8 18h8"/></svg></div><div><h3>Cloud &amp; infrastructure</h3><p>Architecture, deployment, and hosting that scales with you and stays secure by default.</p></div></div>
+      <div class="svc-row" data-reveal style="--i:2"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg></div><div><h3>Product engineering</h3><p>We help take an idea from prototype to a real product people can rely on.</p></div></div>
+      <div class="svc-row" data-reveal style="--i:3"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v4M12 17v4M3 12h4M17 12h4"/><circle cx="12" cy="12" r="4.5"/></svg></div><div><h3>Support &amp; maintenance</h3><p>Ongoing monitoring, fixes, and improvements so your software stays fast and dependable.</p></div></div>
+      <div class="svc-row" data-reveal style="--i:4"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="6" cy="6" r="2.5"/><circle cx="18" cy="18" r="2.5"/><path d="M8 6h6a4 4 0 0 1 4 4v6"/></svg></div><div><h3>Integrations</h3><p>Connecting the tools you already use so data moves cleanly between them.</p></div></div>
+      <div class="svc-row" data-reveal style="--i:5"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 19V9M12 19V5M20 19v-6"/></svg></div><div><h3>Consulting</h3><p>An outside technical eye on your roadmap, stack decisions, and team process.</p></div></div>
     </div>
   </div>
 </section>
 
-<section style="background:var(--paper-dim);">
+<section class="bg-mist">
   <div class="container">
-    <div class="section-head" style="display:flex;align-items:flex-end;justify-content:space-between;gap:24px;flex-wrap:wrap;max-width:none;margin-bottom:32px;">
-      <div>
-        <h2 style="margin-bottom:0;">Real projects, already in use.</h2>
-      </div>
-      <a href="products.html" class="btn btn-ghost">See client work</a>
+    <div class="sec-head" data-reveal>
+      <h2>Real projects, already in use.</h2>
+      <p>Built for clients and handed over. Client names stay private.</p>
     </div>
-    <div class="grid-3">
-      <div class="product-card accent-client">
-        <div class="card-top"><span class="status is-done">Handed over</span></div>
-        <h3>Factory Operations App</h3>
-        <p>An Android app for a manufacturing client covering production tracking, sales, cash management, and staff attendance.</p>
-      </div>
-      <div class="product-card accent-client">
-        <div class="card-top"><span class="status is-done">Handed over</span></div>
-        <h3>Automated Leave Approval</h3>
-        <p>A leave request system for a hospital client with rule-based auto-approval across nine policy conditions.</p>
-      </div>
-      <div class="product-card accent-client">
-        <div class="card-top"><span class="status is-done">Handed over</span></div>
-        <h3>Corporate Website</h3>
-        <p>A public company website designed and built for a plastics manufacturing client — from brand story to product range.</p>
-      </div>
+    <div class="cgrid">
+      <article class="ccard" data-reveal style="--i:0"><div class="meta"><span class="tag">Manufacturing &middot; Android app</span><span class="status is-done">Handed over</span></div><h3>Factory Operations App</h3><p>An Android app for a manufacturing client covering production tracking, sales, cash management, and staff attendance.</p></article>
+      <article class="ccard" data-reveal style="--i:1"><div class="meta"><span class="tag">Healthcare &middot; Automation</span><span class="status is-done">Handed over</span></div><h3>Automated Leave Approval</h3><p>A leave request system for a hospital client with rule-based auto-approval across nine policy conditions.</p></article>
+      <article class="ccard" data-reveal style="--i:2"><div class="meta"><span class="tag">Manufacturing &middot; Website</span><span class="status is-done">Handed over</span></div><h3>Corporate Website</h3><p>A public company website designed and built for a plastics manufacturing client &mdash; from brand story to product range.</p></article>
     </div>
+    <p style="margin-top:36px;"><a href="products.html#client-work" class="btn btn-ghost">See client work <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></p>
   </div>
 </section>
 
-<section style="background:var(--graphite);color:#fff;">
+<section class="band">
   <div class="container">
-    <div class="section-head" style="max-width:560px;">
-      <span class="status is-progress on-dark" style="margin-bottom:14px;">In development</span>
-      <h2 style="margin-top:0;">Our own product line is taking shape.</h2>
-      <p style="color:#aeb6c6;">ZevoraTech is building software of its own alongside client work — some already available, more on the way. Leave your email and we'll let you know when something new ships.</p>
-    </div>
-    <form class="notify-form" onsubmit="event.preventDefault(); this.querySelector('button').textContent='You are on the list'; this.querySelector('button').disabled=true;">
-      <input type="email" placeholder="you@company.com" required aria-label="Email address">
+    <h2 data-reveal>Get a note when we ship something new.</h2>
+    <p class="lead" data-reveal style="--i:1">We build our own software alongside client work. Leave your email and we&rsquo;ll tell you when a new product goes live.</p>
+    <form class="notify-form" id="notifyForm" data-reveal style="--i:2">
+      <input type="email" name="email" placeholder="you@company.com" required aria-label="Email address">
       <button type="submit" class="btn btn-primary">Notify me</button>
     </form>
-    <p class="form-note">No spam — just a note when we ship.</p>
+    <p class="form-note" id="notifyNote">No spam &mdash; just a note when we ship.</p>
   </div>
 </section>
 
 <section>
   <div class="container">
-    <div class="cta-band">
+    <div class="cta-band" data-reveal>
       <div>
         <h2>Have a project in mind?</h2>
-        <p>Tell us what you're building — we'll get back to you within a day.</p>
+        <p>Tell us what you&rsquo;re building &mdash; we&rsquo;ll get back to you within a day.</p>
       </div>
-      <a href="contact.html" class="btn btn-primary">Contact ZevoraTech</a>
+      <a href="contact.html" class="btn">Contact ZevoraTech <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
     </div>
   </div>
 </section>
-
+</main>
 <footer>
   <div class="container">
     <div class="footer-grid">
       <div>
-        <div class="footer-brand"><img src="assets/logo2-mark-dark.png" alt="ZevoraTech logo">ZevoraTech</div>
-        <p style="color:#8790a0;font-size:14.5px;max-width:280px;">A software studio building custom applications and a growing line of our own products.</p>
+        <div class="footer-brand"><img src="assets/logo2-mark-dark.png" alt="">ZevoraTech</div>
+        <p>A software studio in Perambalur, Tamil Nadu, building custom applications and its own line of products.</p>
       </div>
       <div>
         <h4>Site</h4>
@@ -333,17 +228,16 @@
         <ul>
           <li><a href="mailto:info@zevoratech.in">info@zevoratech.in</a></li>
           <li><a href="contact.html">Work with us</a></li>
-          <li><a href="privacy-policy.html">Privacy Policy</a></li>
+          <li><a href="privacy-policy.html">Privacy policy</a></li>
         </ul>
       </div>
     </div>
     <div class="footer-bottom">
-      <span>© <span id="year"></span> ZevoraTech. All rights reserved.</span>
+      <span>&copy; <span id="year"></span> ZevoraTech. All rights reserved.</span>
       <span>zevoratech.in</span>
     </div>
   </div>
 </footer>
-
 <script src="script.js"></script>
 </body>
 </html>
